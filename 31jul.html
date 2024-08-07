@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#p1").mouseenter(function(){
+        alert("Alert message");
+      });
+
+      $("button#hide-paragraphs").click(function(){
+        $("p").hide();
+      });
+
+      $("p").click(function(){
+        $(this).hide();
+      });
+    });
+  </script>
+</head>
+<body>
+
+<h2>heading</h2>
+
+<p id="p1">Hover on this paragraph.</p>
+<p>Example paragraph.</p>
+<p>Another example paragraph.</p>
+<p>Click to make this paragraph disappear.</p>
+<p>Click here too</p>
+<p>Also click</p>
+
+<button id="hide-paragraphs">Click here to hide all paragraphs</button>
+
+</body>
+</html>
